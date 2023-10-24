@@ -11,10 +11,12 @@ const app = express()
 
 
 app.use(express.json());
+
+
 app.use(cors({
   credentials: true,
   // regExpression berish kerak
-  origin: "http://localhost:3000"
+  origin: "https://sunet.uz"
 }));
 
 app.use("/api", router);
